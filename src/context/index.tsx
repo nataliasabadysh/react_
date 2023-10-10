@@ -1,4 +1,3 @@
-// Core
 import React, { createContext, useState, useCallback, ReactNode } from "react";
 
 interface AppProviderProps {
