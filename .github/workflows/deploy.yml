@@ -1,22 +1,47 @@
-name: GitHub Actions Demo
+name: Build and deploy to GitHub Pages
+
 on:
   push:
     branches: [ dev ]
   pull_request:
     branches: [ dev ]
 jobs:
-  init:
+  build-and-deploy:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-varsion: [ 17.x ]
     steps:
-      - uses: actions/checkout@v3
-      - name: Staring Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2.3.1
+
+      - name: Install, lint, build 🔧
+        run: |
+          npm install
+          npm run lint:js
+          npm run build
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
-          node-version: ${{ matrix.node-version }}
-      - name: install modules
-        run: npm install
-      - name: build project
-        run: npm run build
+          branch: gh-pages
+          folder: build
+# name: GitHub Actions Demo
+# on:
+  # push:
+  #   branches: [ dev ]
+  # pull_request:
+  #   branches: [ dev ]
+# jobs:
+#   init:
+#     runs-on: ubuntu-latest
+#     strategy:
+#       matrix:
+#         node-varsion: [ 17.x ]
+#     steps:
+#       - uses: actions/checkout@v3
+#       - name: Staring Node.js ${{ matrix.node-version }}
+#         uses: actions/setup-node@v3
+#         with:
+#           node-version: ${{ matrix.node-version }}
+#       - name: install modules
+#         run: npm install
+#       - name: build project
+#         run: npm run build
