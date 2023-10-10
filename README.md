@@ -12,7 +12,10 @@ The application is built using a robust and modern tech stack to ensure performa
 - **Node.js**: Backend development for handling requests, executing application logic, and database management
 - **TypeScript**: Adds static types to JavaScript, enhancing code quality and understandability
 - **Material-UI (MUI)**: A popular React UI framework for faster and easier web development
-- **Styled-Components**: Utilized for writing CSS styles with JavaScript, enhancing the styling process of the components
+- **Styled-Components**: Utilized for writing CSS styles with JavaScript, enhancing the styling process of the
+- **Apollo-Client**: [apollo graphql](https://www.apollographql.com/)
+
+components
 
 ## Getting Started
 

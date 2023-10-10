@@ -1,5 +1,6 @@
 import { ReactNode, useContext } from "react";
 import { AppContext } from "../../context";
+import { AppDrawer } from "../drawer/Drawer";
 
 interface FooterProps {
   children: ReactNode;
@@ -12,11 +13,9 @@ export const Layout: React.FC<FooterProps> = ({ children }) => {
 
   return (
     <div className="layout">
-      <header>
-        <h1>Header App</h1>
-      </header>
-
-      <main>{children}</main>
+      <AppDrawer>
+        <>{children}</>
+      </AppDrawer>
 
       <footer>
         <p>&copy; 2023 </p>

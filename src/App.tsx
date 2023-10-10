@@ -1,12 +1,16 @@
+// core
+import Dashboard from "components/dashboard/dashboard";
 import React from "react";
+// components
 import HeaderApp from "./components/header";
+import { Layout } from "./components/layout/index";
+import "./theme/index.css";
 
-const App: React.FC = () => {
+const App: React.FunctionComponent = () => {
   return (
-    <div className="App">
-      <HeaderApp username={"Natalia Test"} isVisible={true} />
-      hi
-    </div>
+    <Layout>
+      <Dashboard />
+    </Layout>
   );
 };
 
