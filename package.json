@@ -26,10 +26,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "type:check": "node ./scripts/type.ts",
-    "test:eslint.ts": "node ./scripts/eslint.ts",
-    "eject": "react-scripts eject"
+    "test:check": "node ./scripts/type.ts",
+    "test:eslint": "node ./scripts/eslint.ts",
+    "build:storybook": "node ./scripts/storybook.ts",
+    "test:unit": "react-scripts test"
   },
   "eslintConfig": {
     "extends": [
