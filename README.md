@@ -24,32 +24,35 @@ The application is built using a robust and modern tech stack to ensure performa
 ### Installation
 
 1. Clone the repository:
-    ```bash
-    git clone https://github.com/nataliasabadysh/react_.git
-    ```
+
+   ```bash
+   git clone https://github.com/nataliasabadysh/react_.git
+   ```
 
 2. Install dependencies:
-    ```bash
-    npm install
-    ```
+
+   ```bash
+   npm install
+   ```
 
 3. Start the development server:
-    ```bash
-    npm start
-    ```
+
+   ```bash
+   npm start
+   ```
 
 4. Open your browser and go to `http://localhost:3000`
 
 ## Contribution
 
-We welcome contributions from the community. 
-If you'd like to contribute, please fork the repository, 
-make your changes, and create a pull request. Ensure that your code is clean and well-commented. 
+We welcome contributions from the community.
+If you'd like to contribute, please fork the repository,
+make your changes, and create a pull request. Ensure that your code is clean and well-commented.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+# Useful Links
 
-# Useful Links  
 [React+TypeScript Cheatsheets](https://github.com/typescript-cheatsheets/react#reacttypescript-cheatsheets)

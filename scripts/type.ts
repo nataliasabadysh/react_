@@ -1,1 +1,1 @@
-console.log('type check file is running') 
+console.log("type check file is running");
