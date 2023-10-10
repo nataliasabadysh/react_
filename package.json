@@ -27,10 +27,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "format": "prettier-eslint --list-different $PWD/'src/**/*.{js,jsx}'; prettier-eslint --write $PWD/'src/**/*.{js,jsx}'",
-    "lint": "eslint ./src/** --ext .{js,jsx} -c .eslintrc --no-error-on-unmatched-pattern",
-    "lint:fix": "eslint ./src/** --ext .{js,jsx} -c .eslintrc --no-error-on-unmatched-pattern --fix"
+    "type:check": "node ./scripts/type.ts",
+    "test:eslint.ts": "node ./scripts/eslint.ts",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
