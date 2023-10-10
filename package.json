@@ -29,7 +29,7 @@
     "test:check": "node ./scripts/type.ts",
     "test:eslint": "node ./scripts/eslint.ts",
     "build:storybook": "node ./scripts/storybook.ts",
-    "test:unit": "react-scripts test"
+    "test": "react-scripts test"
   },
   "eslintConfig": {
     "extends": [
