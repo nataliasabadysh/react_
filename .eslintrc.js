@@ -1,8 +1,9 @@
 module.exports = {
-    parserOptions: {
-      project: '“e2e/tsconfig.json',
+  parserOptions: {
+    project: "“e2e/tsconfig.json",
     //   “project”: [“tsconfig.json”, “e2e/tsconfig.json”],
-      tsconfigRootDir: __dirname,
-      sourceType: 'module',
-    },
-  };
+    tsconfigRootDir: __dirname,
+    sourceType: "module",
+  },
+  extends: ["prettier"],
+};

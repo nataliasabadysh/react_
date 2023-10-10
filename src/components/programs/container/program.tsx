@@ -1,12 +1,5 @@
-import React, { FC } from 'react';
-
+import React, { FC } from "react";
 
 export const Programs: FC = () => {
-
-  return (
-    <span>
-      Hi
-    </span>
-  );
+  return <span>Hi</span>;
 };
-

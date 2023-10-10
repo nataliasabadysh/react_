@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC } from "react";
 
 interface Props {
   buttonText: string;
@@ -6,13 +6,8 @@ interface Props {
 
 export const CreateProgram: FC<Props> = ({ buttonText }) => {
   const handleClick = () => {
-    alert('Hello, World!');
+    alert("Hello, World!");
   };
 
-  return (
-    <button onClick={handleClick}>
-      {buttonText}
-    </button>
-  );
+  return <button onClick={handleClick}>{buttonText}</button>;
 };
-

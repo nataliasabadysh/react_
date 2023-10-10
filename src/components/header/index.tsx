@@ -1,6 +1,5 @@
-
-import React, { FC } from 'react';
-import { HeaderWrapper, Logo } from './styles';
+import React, { FC } from "react";
+import { HeaderWrapper, Logo } from "./styles";
 
 interface HeaderProps {
   username: string;

@@ -8,18 +8,18 @@ import { book } from "../../navigation/book";
 import { useAuth } from "./hooks/useAuth";
 
 interface GuardianProps {
-    children: ReactNode;
+  children: ReactNode;
 }
 
 export const Guardian: React.FC<GuardianProps> = ({ children }) => {
-    // const navigate = useNavigate();
-    const { isAuthenticated } = useAuth();
+  // const navigate = useNavigate();
+  const { isAuthenticated } = useAuth();
 
-    useEffect(() => {
-        if (!isAuthenticated) {
-            // navigate(book.root);
-        }
-    }, [history, isAuthenticated]);
+  useEffect(() => {
+    if (!isAuthenticated) {
+      // navigate(book.root);
+    }
+  }, [history, isAuthenticated]);
 
-    return <>{children}</>;
+  return <>{children}</>;
 };

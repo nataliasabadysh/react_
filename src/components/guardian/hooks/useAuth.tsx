@@ -1,9 +1,9 @@
 interface AuthState {
-    isAuthenticated: boolean;
+  isAuthenticated: boolean;
 }
 
 export const useAuth = (): AuthState => {
-    return {
-        isAuthenticated: true,
-    };
+  return {
+    isAuthenticated: true,
+  };
 };
